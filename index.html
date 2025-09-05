@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gemer Presents | Создание игр в Roblox</title>
+    <title>Gemer Presents</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👑</text></svg>">
     <style>
         * {
             margin: 0;
@@ -210,6 +211,59 @@
             color: #4CAF50;
         }
 
+        /* Доска почёта */
+        .honor-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .honor-card {
+            background: rgba(42, 16, 80, 0.6);
+            border-radius: 15px;
+            padding: 25px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .honor-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(138, 43, 226, 0.3);
+        }
+
+        .honor-avatar {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin: 0 auto 20px;
+            background: linear-gradient(45deg, #8A2BE2, #DA70D6);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 40px;
+            border: 3px solid #BB86FC;
+        }
+
+        .honor-role {
+            color: #BB86FC;
+            font-weight: bold;
+            margin: 15px 0;
+            font-size: 1.2rem;
+        }
+
+        .honor-name {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+        
+        .honor-description {
+            color: #D0BCFF;
+            font-size: 1rem;
+            line-height: 1.6;
+            margin-top: 15px;
+        }
+
         /* Футер */
         footer {
             background: #11052D;
@@ -235,6 +289,16 @@
             .about-content {
                 padding: 20px;
             }
+            
+            .honor-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .honor-avatar {
+                width: 80px;
+                height: 80px;
+                font-size: 30px;
+            }
         }
     </style>
 </head>
@@ -246,6 +310,7 @@
             <a href="#home">Главная</a>
             <a href="#projects">Проекты</a>
             <a href="#services">Услуги</a>
+            <a href="#honor">Доска Почёта</a>
             <a href="#about">О нас</a>
         </div>
     </nav>
@@ -270,7 +335,7 @@
             </div>
             <div class="project-card">
                 <h3>Zombie Range Defense</h3>
-                <p>Защищай свою территорию от зомби-апокалипсиса!</p>
+                <p>За защищай свою территорию от зомби-апокалипсиса!</p>
                 <div class="project-visits">(Visits 2,328)</div>
             </div>
             <div class="project-card">
@@ -297,6 +362,43 @@
             <div class="service-card">
                 <h3>3D Моделирование</h3>
                 <p>Дизайн уникальных моделей и ассетов для игр</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Доска Почёта -->
+    <section id="honor">
+        <h2 class="section-title">Доска Почёта</h2>
+        <div class="honor-grid">
+            <div class="honor-card">
+                <div class="honor-avatar">👑</div>
+                <h3 class="honor-name">MisterGemer777</h3>
+                <div class="honor-role">Владелец студии</div>
+                <p class="honor-description">Разработчик разных игр в Roblox с 2023 года</p>
+            </div>
+            <div class="honor-card">
+                <div class="honor-avatar">🌟</div>
+                <h3 class="honor-name">TheMisha25k</h3>
+                <div class="honor-role">Второй Владелец</div>
+                <p class="honor-description">Разработчик также менеджер по рекламе наших игр с 2024 года!</p>
+            </div>
+            <div class="honor-card">
+                <div class="honor-avatar">🚀</div>
+                <h3 class="honor-name">wertyuiop</h3>
+                <div class="honor-role">Начинающий Скриптер</div>
+                <p class="honor-description">Помогает студии делать модельки, даёт крутые идеи для игры и делает не большую помощь в скриптах с 2024 года!</p>
+            </div>
+            <div class="honor-card">
+                <div class="honor-avatar">🎨</div>
+                <h3 class="honor-name">guguq_944</h3>
+                <div class="honor-role">Дизайнер Студии</div>
+                <p class="honor-description">Помогает студии делать модельки, снимации, аватарки и превысшки с 2024 года!</p>
+            </div>
+            <div class="honor-card">
+                <div class="honor-avatar">🔧</div>
+                <h3 class="honor-name">Glitch</h3>
+                <div class="honor-role">Начинающий Скриптер</div>
+                <p class="honor-description">Помогает студии делоть модельки и не большую помощь в скриптах с 2025 года!</p>
             </div>
         </div>
     </section>
